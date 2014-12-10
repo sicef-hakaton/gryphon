@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/txtOptionsAndSettingsHeader"
+        android:text="OPTIONS AND SETINGS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/textColor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/txtTimer"
+            android:text="Timer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:textColor="@color/textColor" />
+        <Spinner
+            android:id="@+id/spinTimeOptions"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/txtSubjectsOptions"
+            android:text="Subjects"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:textColor="@color/textColor" />
+        <Spinner
+            android:id="@+id/spinCategoryOptions"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/txtVibrationOptions"
+            android:text="Vibration"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:layout_weight="1"
+            android:textColor="@color/textColor" />
+        <ToggleButton
+            android:id="@+id/toggleVibrationOptions"
+            android:background="@drawable/TransparentToogleVibrationButton"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:layout_weight="2" />
+    </LinearLayout>
+</LinearLayout>
